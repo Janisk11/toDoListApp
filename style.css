@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    background-color:  rgb(240, 228, 252);
+    
+}
+
+
+.loginform {
+    width: 400px;
+    
+    margin: 0 auto;
+    padding: 30px 0;
+   
+}
+
+.loginform form {
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    background-color: rgb(252, 247, 251);
+    box-shadow: 3px 3px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);
+    padding: 40px;
+}
+
+
+ 
+.loginform h2 {
+    text-align: center;
+    font-size: 34px;
+    margin: 10px 0 15px;
+    color: rgb(40, 20, 41);
+}
+
+.loginform label{
+    text-align: left;
+    
+}
+
+.loginform .btn {  
+   
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.login-btn {
+    border-color: rgb(85, 32, 85);
+    background: rgb(40, 20, 41);
+    transition: all 0.4s;
+    color: white;
+}
+.login-btn:hover {
+    background: white;
+    font-size: 20px;
+    font-weight: bold;
+   
+    color:rgb(40, 20, 41);
+}
+
+.navbar{
+    padding: 1.5%;
+    
+}
+.navbar .btn{
+  
+    font-size: 18px;
+    border-radius: 5px;
+   padding: 10px;
+   border: 1.5px solid rgb(73, 9, 99);
+   background: white;
+   font-weight: bolder;
+   transition: all 0.4s;
+
+}
+
+.navbar .todo_btn{
+   
+    color: rgb(48, 6, 71);
+}
+.navbar .todo_btn:hover{
+    background: rgb(48, 6, 71);
+    color:white;
+}
+
+.navbar .log_btn{
+  
+    color: rgb(48, 6, 71);
+}
+.navbar .log_btn:hover{
+    background: rgb(83, 81, 87);
+    color:white;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+

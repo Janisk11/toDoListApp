@@ -1,5 +1,11 @@
 // js code for ToDo List page
-    
+// prevent back
+
+function preventBack() { window.history.forward(); }  
+setTimeout("preventBack()", 0);  
+window.onunload = function () { null }; 
+
+
     // fetch data from api and arrange in a table with checkboxes
     $(document).ready(function(){
  

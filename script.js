@@ -52,7 +52,7 @@
                         if(todos.completed==true){ 
                                 output += `
                                     <td>
-                                    <input  checked disabled  type='checkbox'/>
+                                    <input checked disabled  type='checkbox'/>
                                     
                                     </td>
     
@@ -63,7 +63,7 @@
                     else{
                                 output += `
                                         <td>
-                                        <input id='checkbox' class='checkbox' type='checkbox' name='checkbox' value=""/>
+                                        <input id='checkbox' class='checkbox' type='checkbox' name='checkbox' />
                                         
                                         </td>
     

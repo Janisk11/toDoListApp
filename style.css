@@ -115,6 +115,8 @@ table {
   }
 
 .checkbox:hover{ 
-    box-shadow:  1.5px 1.5px 1.5px rgba(0, 0, 0.3);
+    outline: 1px solid rgba(0, 0, 0.3);
+    box-shadow:  2px 2px 2px rgba(0, 0, 0.3);
 }
+
 

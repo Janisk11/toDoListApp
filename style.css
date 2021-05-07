@@ -20,12 +20,12 @@ body{
 
 .loginform form {
     border-radius: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20%;
     margin-bottom: 20%;
     background-color: rgb(252, 247, 251);
-    box-shadow: 3px 3px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);
+    box-shadow: 2px 2px 2px 2px rgba(0.3, 0.3, 0.3, 0.3);
     padding: 40px;
 }
 

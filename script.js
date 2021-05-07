@@ -1,4 +1,9 @@
+// disable browser back
 
+
+function preventBack() { window.history.forward(); }
+setTimeout("preventBack()", 0);
+window.onunload = function () { null };
 
     
 // focusing username when page loads

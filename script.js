@@ -36,8 +36,8 @@
 
     // fetch data from api and arrange in a table with checkboxes
     $(document).ready(function(){
- 
-        document.getElementById('fetchtodosBtn').addEventListener('click', fetchTodos); 
+        $(document).on('click','.fetchtodosBtn', fetchTodos);
+        // document.getElementById('fetchtodosBtn').addEventListener('click', fetchTodos); 
         
         function fetchTodos(){
             fetch('https://jsonplaceholder.typicode.com/todos/')

@@ -16,7 +16,8 @@ window.onunload = function () { null };
 //  validate login form and redirect to main page  
     function validatelogin(callback){
         var user="admin";
-        var pwd = 12345;
+        var pwd = 12345; 
+      
         let username = document.getElementById("username").value;
         let logpwd = document.getElementById("logpwd").value;
     
@@ -34,13 +35,15 @@ window.onunload = function () { null };
         }
     }
     
-    function loadmain(){ 
+    function loadmain(){  
+        document.getElementById("logform").action = "main.html";
          return true;
     }
 
 
     // fetch data from api and arrange in a table with checkboxes
     $(document).ready(function(){
+
         $(document).on('click','.fetchtodosBtn', fetchTodos);
         // document.getElementById('fetchtodosBtn').addEventListener('click', fetchTodos); 
         
@@ -50,14 +53,12 @@ window.onunload = function () { null };
                 .then(todos => {
                       var output = "";
                     todos.forEach(function(todos) {  
-                      if(todos.complete=true){
-                          
-                      }
+                      
                         output += "<tr>";
                         if(todos.completed==true){ 
                                 output += `
                                     <td>
-                                    <input checked disabled  type='checkbox'/>
+                                    <input checked disabled type='checkbox'/>
                                     
                                     </td>
     
@@ -83,30 +84,36 @@ window.onunload = function () { null };
                     document.getElementById("fetchtodosBtn").disabled = true;
                 });
         }
-    
+
+
         // check the number of checked boxes and alert
        var promise = new Promise(function(resolve,reject){
            var count=0;
            $(document).on('change','.checkbox', function (){
-               if($(this).prop("checked") == true){
-                   count++;  
-               }
-               else if($(this).prop("checked") == false){
-                    count--;   
-               }
-           
+               if($(this).prop("checked") == true)
+                  count++;    
+                
+               else 
+                    count--;        
                console.log("Checked boxes: "+count);
                if( count == 5 ){
+               
                 resolve();
-                }    
+                
+               }
+                
            });
        });
     
        promise
             .then(function(){
                         alert(" Congrats. 5 Tasks have been Successfully Completed ");
+                        
                     });
-    
+            
+            
+
+   
     });
    
 

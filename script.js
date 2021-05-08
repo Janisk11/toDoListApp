@@ -90,11 +90,12 @@ window.onunload = function () { null };
        var promise = new Promise(function(resolve,reject){
            var count=0;
            $(document).on('change','.checkbox', function (){
-               if($(this).prop("checked") == true)
+               if($(this).prop("checked") == true){
+                   $(this).attr("disabled","true");
                   count++;    
-                
-               else 
-                    count--;        
+           }
+            //    else 
+            //         count--;        
                console.log("Checked boxes: "+count);
                if( count == 5 ){
                

@@ -23,11 +23,11 @@ window.onunload = function () { null };
     
         if(username == "" || logpwd == ""){
             alert("Username and Password cannot be empty");
-            return false
+            
         }
         else if(username != user || logpwd != pwd){
             alert("Incorrect Username or Password");
-            return false
+           
     
         }
         else {
@@ -37,7 +37,7 @@ window.onunload = function () { null };
     
     function loadmain(){  
         document.getElementById("logform").action = "main.html";
-         return true;
+        //  return true;
     }
 
 
